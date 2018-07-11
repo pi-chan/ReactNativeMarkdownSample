@@ -22,11 +22,35 @@ export default class MainScreen extends Component {
   };
 
   render() {
+    const markdown = `
+# 見出し
+    
+- 箇条書き
+  - 入れ子
+  - 入れ子      
+- 箇条書き
+- 箇条書き
+
+[ぴよログ](https://blog.piyo.tech/)
+
+[画像](https://blog.piyo.tech/images/prof.png)]
+
+> 引用
+    `
+
     return (
       <View style={styles.container}>
         <CustomButton
+          title="react-native-simple-markdown"
+          onPress={() => this.props.navigation.navigate('SimpleMarkdown', { markdown })}
+        />
+        <CustomButton
           title="react-native-showdown"
-          onPress={() => this.props.navigation.navigate('Showdown')}
+          onPress={() => this.props.navigation.navigate('Showdown', { markdown })}
+        />
+        <CustomButton
+          title="react-native-markdown-renderer"
+          onPress={() => this.props.navigation.navigate('MarkdownRenderer', { markdown })}
         />
       </View>
     );

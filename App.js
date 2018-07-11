@@ -10,6 +10,9 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import MainScreen from "./src/screens/MainScreen";
+import ShowdownScreen from "./src/screens/ShowdownScreen";
+import SimpleMarkdownScreen from "./src/screens/SimpleMarkdownScreen";
+import MarkdownRendererScreen from "./src/screens/MarkdownRendererScreen";
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -20,6 +23,9 @@ const instructions = Platform.select({
 
 const MainNavigator = StackNavigator({
   Main: MainScreen,
+  Showdown: ShowdownScreen,
+  SimpleMarkdown: SimpleMarkdownScreen,
+  MarkdownRenderer: MarkdownRendererScreen
 });
 
 type Props = {};
