@@ -6,7 +6,7 @@ const CustomButton = ({ title, onPress }) => (
     style={{
       backgroundColor: 'blue',
       padding: 20,
-      width: 200,
+      width: 300,
       margin: 20,
       alignItems: 'center',
     }}
@@ -31,11 +31,13 @@ export default class MainScreen extends Component {
 - 箇条書き
 - 箇条書き
 
-[ぴよログ](https://blog.piyo.tech/)
-
-[画像](https://blog.piyo.tech/images/prof.png)]
+[Google](https://www.google.co.jp/)
 
 > 引用
+
+**太字太字**
+
+![画像](https://blog.piyo.tech/images/prof.png)
     `
 
     return (

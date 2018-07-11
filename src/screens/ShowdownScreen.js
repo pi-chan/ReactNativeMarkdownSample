@@ -10,7 +10,7 @@ export default class ShowdownScreen extends Component {
   render() {
     const markdown = this.props.navigation.getParam('markdown')
     return (
-      <ScrollView>
+      <ScrollView style={{padding: 10}}>
         <Markdown body={markdown} />
       </ScrollView>
     );
