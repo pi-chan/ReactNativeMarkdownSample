@@ -7,8 +7,13 @@
     "test": "jest"
   },
   "dependencies": {
+    "marked": "^0.4.0",
     "react": "16.4.1",
-    "react-native": "0.56.0"
+    "react-native": "0.56.0",
+    "react-native-autoheight-webview": "^0.6.1",
+    "react-native-htmlview": "^0.12.1",
+    "react-native-showdown": "^0.4.0",
+    "react-navigation": "^2.6.2"
   },
   "devDependencies": {
     "babel-jest": "23.4.0",
