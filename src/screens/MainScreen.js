@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Button, StyleSheet, TouchableOpacity, Text } from 'react-native';
+import marked from 'marked';
 
 const CustomButton = ({ title, onPress }) => (
   <TouchableOpacity
@@ -40,6 +41,9 @@ export default class MainScreen extends Component {
 ![画像](https://blog.piyo.tech/images/prof.png)
     `
 
+    const html = marked(markdown);
+    console.log(html);
+
     return (
       <View style={styles.container}>
         <CustomButton
@@ -53,6 +57,18 @@ export default class MainScreen extends Component {
         <CustomButton
           title="react-native-markdown-renderer"
           onPress={() => this.props.navigation.navigate('MarkdownRenderer', { markdown })}
+        />
+        <CustomButton
+          title="react-native-htmlview"
+          onPress={() => this.props.navigation.navigate('Htmlview', { html })}
+        />
+        <CustomButton
+          title="react-native-autoheight-webview"
+          onPress={() => this.props.navigation.navigate('AutoheightWebview', { html })}
+        />
+        <CustomButton
+          title="WebView"
+          onPress={() => this.props.navigation.navigate('Webview', { html })}
         />
       </View>
     );
