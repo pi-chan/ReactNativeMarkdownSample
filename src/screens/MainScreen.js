@@ -63,6 +63,10 @@ export default class MainScreen extends Component {
           onPress={() => this.props.navigation.navigate('Htmlview', { html })}
         />
         <CustomButton
+          title="react-native-render-html"
+          onPress={() => this.props.navigation.navigate('RenderHtml', { html })}
+        />
+        <CustomButton
           title="react-native-autoheight-webview"
           onPress={() => this.props.navigation.navigate('AutoheightWebview', { html })}
         />

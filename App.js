@@ -16,6 +16,7 @@ import MarkdownRendererScreen from "./src/screens/MarkdownRendererScreen";
 import HtmlviewScreen from "./src/screens/HtmlviewScreen";
 import AutoheightWebviewScreen from "./src/screens/AutoheightWebviewScreen";
 import WebviewScreen from "./src/screens/WebviewScreen";
+import RenderHtmlScreen from "./src/screens/RenderHtmlScreen";
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -31,7 +32,8 @@ const MainNavigator = StackNavigator({
   MarkdownRenderer: MarkdownRendererScreen,
   Htmlview: HtmlviewScreen,
   AutoheightWebview: AutoheightWebviewScreen,
-  Webview: WebviewScreen
+  Webview: WebviewScreen,
+  RenderHtml: RenderHtmlScreen,
 });
 
 type Props = {};
